@@ -814,6 +814,359 @@ files:
         }
     }
   learner_created: false
+- name: src/recipes/service/RecipeService.java
+  visible: true
+  text: |+
+    package recipes.service;
+
+    import recipes.entity.Recipe;
+
+    import java.util.List;
+    import java.util.Optional;
+
+
+    public interface RecipeService {
+
+        public enum searchParam {
+            CATEGORY, NAME
+        }
+
+        // Save operation
+        Recipe saveRecipe(Recipe recipe);
+
+        // Update operation
+        Recipe updateRecipe(Recipe recipe, int recipeId);
+
+        // Read by ID operation
+        Optional<Recipe> fetchRecipeById(int recipeId);
+
+        // Search by category or name (returns list of recipes)
+        List<Recipe> search(searchParam type, String arg);
+
+
+        /* Queries probably need direct implementation- not mentioning in the interface
+        // Search by category (returns list of recipes)
+        List<Recipe> findByCategoryIgnoreCaseOrderByDateDesc(String category);
+
+        // Search by category or name (returns list of recipes)
+        List<Recipe> search(searchParam type, String arg);
+         */
+
+        /* Delete later?
+        // Search recipes by category (returns list of recipes)
+        Iterable<Recipe> fetchRecipeByCategory(String category);
+         */
+
+        // Delete by ID operation
+        void deleteRecipeById(int recipeId);
+
+    }
+
+
+
+  learner_created: true
+- name: src/recipes/repository/RecipeRepository.java
+  visible: true
+  text: |
+    package recipes.repository;
+
+    import org.springframework.data.repository.CrudRepository;
+    import recipes.entity.Recipe;
+
+    import java.util.List;
+
+    public interface RecipeRepository extends CrudRepository<Recipe, Integer> {
+        List<Recipe> findByCategoryIgnoreCaseOrderByDateDesc(String category);
+
+        List<Recipe> findByNameContainingIgnoreCaseOrderByDateDesc(String name);
+    }
+  learner_created: true
+- name: src/recipes/entity/Recipe.java
+  visible: true
+  text: |
+    package recipes.entity;
+
+    import com.fasterxml.jackson.annotation.JsonIgnore;
+    import com.fasterxml.jackson.annotation.JsonInclude;
+    import com.fasterxml.jackson.annotation.JsonProperty;
+    import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+    import org.hibernate.annotations.CreationTimestamp;
+    import org.hibernate.annotations.UpdateTimestamp;
+
+    import javax.persistence.Entity;
+    import javax.persistence.GeneratedValue;
+    import javax.persistence.GenerationType;
+    import javax.persistence.Id;
+    import javax.validation.constraints.NotBlank;
+    import javax.validation.constraints.NotEmpty;
+    import javax.validation.constraints.NotNull;
+    import java.time.LocalDateTime;
+    import java.util.Arrays;
+
+
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    @JsonPropertyOrder({
+            "name",
+            "category",
+            "date",
+            "description",
+            "ingredients",
+            "directions"
+    })
+    @Entity
+    public class Recipe {
+
+        @Id
+        @GeneratedValue(strategy = GenerationType.AUTO)
+        @JsonIgnore
+        private int recipeId;
+        @JsonProperty
+        @NotBlank
+        private String name;
+
+        @JsonProperty
+        @NotBlank
+        private String category;
+
+        @JsonProperty
+        @CreationTimestamp
+        //@UpdateTimestamp
+        //@NotEmpty
+        private LocalDateTime date; // THIS IS A NEW ONE. Q: does it also work for updates?
+
+        @JsonProperty
+        @NotBlank
+        private String description;
+        @JsonProperty
+        @NotEmpty
+        private String[] ingredients;
+        @JsonProperty
+        @NotEmpty
+        private String[] directions;
+
+        // Constructors
+        public Recipe(int recipeId, String name, String category, LocalDateTime date, String description, String[] ingredients, String[] directions) {
+            this.recipeId = recipeId;
+            this.name = name;
+            this.category = category;
+            this.date = date; // LocalDateTime.now();
+            this.description = description;
+            this.ingredients = ingredients;
+            this.directions = directions;
+            recipeId++;
+        }
+
+        public Recipe() {
+        }
+
+        // Setters
+
+        public void setRecipeId(int recipeId) {
+            this.recipeId = recipeId;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public void setCategory(String category) {
+            this.category = category;
+        }
+
+
+        public void setDate(LocalDateTime date) {
+            this.date = date;
+        }
+
+        public void setDescription(String description) {
+            this.description = description;
+        }
+
+        public void setIngredients(String[] ingredients) {
+            this.ingredients = ingredients;
+        }
+
+        public void setDirections(String[] directions) {
+            this.directions = directions;
+        }
+
+        // Getters
+
+        public int getRecipeId() {
+            return recipeId;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+
+        public String getCategory() {
+            return category;
+        }
+
+        public LocalDateTime getDate() {
+            return date;
+        }
+        public String getDescription() {
+            return description;
+        }
+
+        public String[] getIngredients() {
+            return ingredients;
+        }
+
+        public String[] getDirections() {
+            return directions;
+        }
+
+        /*
+        @Override
+        public String toString() {
+            return "Recipe{" +
+                    "name='" + name + '\'' +
+                    ", description='" + description + '\'' +
+                    ", ingredients=" + Arrays.toString(ingredients) +
+                    ", directions=" + Arrays.toString(directions) +
+                    '}';
+        }
+         */
+
+    }
+  learner_created: true
+- name: src/recipes/service/RecipeServiceImpl.java
+  visible: true
+  text: |
+    package recipes.service;
+
+    import org.springframework.beans.factory.annotation.Autowired;
+    import org.springframework.stereotype.Service;
+    import recipes.entity.Recipe;
+    import recipes.entity.RecipeMapper;
+    import recipes.repository.RecipeRepository;
+
+    import java.time.LocalDateTime;
+    import java.util.List;
+    import java.util.Optional;
+
+    @Service
+    public class RecipeServiceImpl implements RecipeService {
+
+        @Autowired
+        private RecipeRepository recipeRepository;
+
+        // Save to database operation
+        @Override
+        public Recipe saveRecipe(Recipe recipe){
+            return recipeRepository.save(recipe);
+        }
+
+        // Update recipe in the database operation
+        @Override
+        public Recipe updateRecipe(Recipe recipe, int recipeId) {
+            Recipe currentDbRecipe = recipeRepository.findById(recipeId).get();
+
+            currentDbRecipe.setName(recipe.getName());
+            currentDbRecipe.setCategory(recipe.getCategory());
+            currentDbRecipe.setDate(LocalDateTime.now());
+            currentDbRecipe.setDescription(recipe.getDescription());
+            currentDbRecipe.setIngredients(recipe.getIngredients());
+            currentDbRecipe.setDirections(recipe.getDirections());
+
+            return recipeRepository.save(currentDbRecipe);
+        }
+
+        // Read by ID operation
+        @Override
+        public Optional<Recipe> fetchRecipeById(int recipeId){ // Previously return type was Recipe
+            return recipeRepository.findById(recipeId);
+        }
+
+        /*
+        // Search recipes by category (returns list of recipes)
+        @Override
+        public Iterable<Recipe> fetchRecipeByCategory(String category){ // Previously return type was Recipe
+            return recipeRepository.findAll();
+        }
+         */
+
+        // Search by category or name (returns list of recipes)
+        public List<Recipe> search(searchParam type, String arg){
+            if (type.equals(searchParam.CATEGORY)){
+                return RecipeMapper.mapRecipesToList(recipeRepository.findByCategoryIgnoreCaseOrderByDateDesc(arg));
+            }
+            return RecipeMapper.mapRecipesToList(recipeRepository.findByNameContainingIgnoreCaseOrderByDateDesc(arg));
+        }
+
+        // Delete by ID operation
+        @Override
+        public void deleteRecipeById(int recipeId){
+            recipeRepository.deleteById(recipeId);
+        }
+
+    }
+  learner_created: true
+- name: src/recipes/entity/IdForReturn.java
+  visible: true
+  text: |+
+    package recipes.entity;
+
+
+    public class IdForReturn {
+
+
+        private int id;
+
+        public IdForReturn(int id) {
+            this.id = id;
+        }
+
+        public void setId(int id) {
+            this.id = id;
+        }
+
+        public int getId() {
+            return this.id;
+        }
+
+        /*
+        @Override
+        public String toString() {
+            return "IdForReturn{" +
+                    "id=" + this.id +
+                    '}';
+        }
+         */
+
+    }
+
+
+  learner_created: true
+- name: src/recipes/controller/RecipeController.java
+  visible: true
+  learner_created: true
+- name: src/recipes/entity/User.java
+  visible: true
+  learner_created: true
+- name: src/recipes/controller/UserRegistrationController.java
+  visible: true
+  learner_created: true
+- name: src/recipes/entity/UserDetailsImpl.java
+  visible: true
+  learner_created: true
+- name: src/recipes/service/UserDetailsServiceImpl.java
+  visible: true
+  learner_created: true
+- name: src/recipes/repository/UserRepository.java
+  visible: true
+  learner_created: true
+- name: src/recipes/webSecurity/WebSecurityConfigurerImpl.java
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/learn/step/13092#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Well done! You've finished the project. Select a new project on <a href="https://hyperskill.org/projects">JetBrains
+    Academy</a> to continue learning.
+  time: Mon, 19 Sep 2022 12:47:32 UTC
 record: -1

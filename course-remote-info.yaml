@@ -3,7 +3,7 @@ hyperskill_project:
   ide_files: https://stepik.org/media/attachments/lesson/529086/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: Wed, 17 Aug 2022 12:18:28 UTC
+update_date: Wed, 21 Sep 2022 17:52:39 UTC
 stages:
 - id: 917
   step: 13088
@@ -16,10 +16,10 @@ stages:
   is_completed: true
 - id: 920
   step: 13091
-  is_completed: false
+  is_completed: true
 - id: 921
   step: 13092
-  is_completed: false
+  is_completed: true
 topics:
   0:
   - title: Write, compile, and run
@@ -237,6 +237,8 @@ topics:
     theory_id: 14652
   - title: Exception handling
     theory_id: 8780
+  - title: Reflection basics
+    theory_id: 3609
   - title: What is a bug
     theory_id: 5504
   - title: Functional testing
@@ -265,6 +267,8 @@ topics:
     theory_id: 3558
   - title: HashMap
     theory_id: 12379
+  - title: hashCode() and equals() in Collections
+    theory_id: 19587
   - title: Protected modifier
     theory_id: 6692
   - title: Referencing subclass objects
@@ -279,6 +283,10 @@ topics:
     theory_id: 3587
   - title: Interface
     theory_id: 3615
+  - title: Runtime type checking
+    theory_id: 3571
+  - title: hashCode() and equals()
+    theory_id: 3586
   2:
   - title: '@Bean vs @Component'
     theory_id: 14771
@@ -392,6 +400,10 @@ topics:
     theory_id: 7778
   - title: Authentication and Authorization
     theory_id: 14219
+  - title: Introduction to creational patterns
+    theory_id: 16251
+  - title: Builder pattern
+    theory_id: 16735
   - title: Builder
     theory_id: 5130
   - title: Abstract class

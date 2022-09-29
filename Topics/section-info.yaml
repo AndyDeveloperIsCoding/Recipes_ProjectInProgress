@@ -20,3 +20,12 @@ content:
 - Regexes in programs
 - Bean validation
 - Integer types and operations
+- LocalTime
+- LocalDate
+- LocalDateTime
+- Comparing dates and time
+- The utility class Collections
+- Abstract class
+- Builder
+- Unit testing with JUnit
+- Test lifecycle annotations

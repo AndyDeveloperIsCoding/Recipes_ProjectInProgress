@@ -20,6 +20,8 @@ repositories {
 
 sourceSets.main.resources.srcDirs = ["src/resources"]
 
+
+
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
@@ -29,5 +31,8 @@ dependencies {
     // Dependencies for H2 database
     runtimeOnly 'com.h2database:h2'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+    //Spring Security
+    implementation 'org.springframework.boot:spring-boot-starter-security'
 
 }

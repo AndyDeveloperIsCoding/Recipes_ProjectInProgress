@@ -9,53 +9,78 @@
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.22/9c08ea24c6eb714e2d6170e8122c069a0ba9aacf/lombok-1.18.22.jar" />
         </processorPath>
         <module name="Recipes.Topics-Bean_validation-Tasks-build-reports-tests.test" />
+        <module name="Recipes.Topics-LocalTime-Millisecond_precision.main" />
         <module name="Recipes.Topics-NPE-Avoid_NPE.test" />
+        <module name="Recipes.Topics-LocalDateTime-Merging_date-time_instances.test" />
         <module name="Recipes.Topics-ArrayList-Theory.test" />
+        <module name="Recipes.Topics-The_utility_class_Collections-The_first_index_of_a_sublist.main" />
         <module name="Recipes.Topics-Default_methods-Implement_a_default_method.test" />
         <module name="Recipes.Topics-Anonymous_classes-String_reverser.main" />
         <module name="Recipes.Topics-Functional_interfaces-The_requirement.test" />
         <module name="Recipes.Topics-Lambda_expressions-Statements.main" />
         <module name="Recipes.Topics-Bean_validation-Tasks-build-generated-sources-annotationProcessor-java.main" />
+        <module name="Recipes.Topics-Builder-Builder.test" />
         <module name="Recipes.Topics-The_Set_interface-Theory.main" />
         <module name="Recipes.Topics-Optional-Avoiding_exceptions.main" />
         <module name="Recipes.Topics-Interface-Theory.test" />
         <module name="Recipes.Topics-Optional-The_address_book.test" />
+        <module name="Recipes.Topics-Builder-Describe_the_builder.test" />
         <module name="Recipes.Topics-Regexes_in_programs-Theory.test" />
         <module name="Recipes.Topics-Bean_validation-@Size_vs_@Min_@Max.test" />
+        <module name="Recipes.Topics-LocalDateTime-Create_LocalDateTime.test" />
         <module name="Recipes.util.main" />
         <module name="Recipes.Topics-Calling_a_method-Theory.main" />
+        <module name="Recipes.Topics-LocalTime-Seconds_since_start_of_a_day.test" />
+        <module name="Recipes.Topics-LocalTime-Seconds_between_two_time_points.main" />
         <module name="Recipes.Topics-Lambda_expressions-Creating_a_closure.test" />
+        <module name="Recipes.Topics-LocalTime-Same_time.main" />
+        <module name="Assertion.Recipes.Topics-Unit_testing_with_JUnit-Assertion.test" />
         <module name="Recipes.Topics-Interface-Area_of_a_circle.test" />
         <module name="Recipes.Topics-Lambda_expressions-Higher-order_functions.test" />
         <module name="Recipes.Topics-NPE-Theory.main" />
         <module name="Recipes.Topics-Anonymous_classes-Single_method.test" />
+        <module name="Recipes.Topics-LocalTime-Theory.main" />
         <module name="Recipes.Topics-Bean_validation-Tasks-build-classes-java.main" />
+        <module name="Recipes.Topics-Comparing_dates_and_time-Don't_be_late_again.main" />
+        <module name="Recipes.Topics-The_utility_class_Collections-Rotating_table.test" />
+        <module name="Recipes.Topics-The_utility_class_Collections-Theory.main" />
+        <module name="Recipes.Topics-Comparing_dates_and_time-Is_the_date_between_the_two_other_dates.test" />
         <module name="Recipes.Topics-Array-Ways_to_create_an_array_of_ints.main" />
+        <module name="Recipes.Topics-Unit_testing_with_JUnit-Failed_assertion.main" />
+        <module name="Test fixture.Recipes.Topics-Test_lifecycle_annotations-Test_fixture.test" />
         <module name="Recipes.Topics-The_List_interface-Replacing_ArrayList_with_LinkedList.main" />
         <module name="Recipes.Topics-Calling_a_method-Method_invocation.main" />
         <module name="Recipes.Topics-Optional-A_suitable_method.main" />
         <module name="Recipes.Topics-The_Set_interface-The_most_suitable_set.main" />
+        <module name="Recipes.Topics-Comparing_dates_and_time-The_intersection_of_time_ranges.main" />
         <module name="Recipes.Topics-Functional_interfaces-Statements.test" />
         <module name="Recipes.Topics-Lambda_expressions-Expression_closure.test" />
         <module name="Recipes.Topics-Anonymous_classes-Implement_Runnable.main" />
+        <module name="Recipes.Topics-Comparing_dates_and_time-Select_correct_statements.main" />
         <module name="Recipes.Topics-Lambda_expressions-Apply_function_to_all_elements.test" />
+        <module name="Recipes.Topics-Builder-Theory.main" />
         <module name="Recipes.Recipes-task-build-reports-tests.test" />
         <module name="Recipes.Topics-The_Map_interface-Counting_words.main" />
         <module name="Recipes.Topics-Default_methods-What_is_a_result.main" />
+        <module name="Theory.Recipes.Topics-Unit_testing_with_JUnit-Theory.test" />
         <module name="Recipes.Topics-Integer_types_and_operations-Next_even_number.test" />
         <module name="Recipes.Topics-Functional_interfaces-Theory.test" />
         <module name="Recipes.Topics-Optional-Create_an_Optional_value.test" />
         <module name="Recipes.Topics-NPE-Where_NPE_might_occur.main" />
         <module name="Recipes.Topics-Functional_interfaces-A_lambda_expression_with_seven_arguments.test" />
         <module name="Recipes.Topics-Optional-What_is_Optional.test" />
+        <module name="Recipes.Topics-LocalTime-LocalTime_constants.test" />
         <module name="Recipes.Topics-Regexes_in_programs-Ignoring_spaces.test" />
         <module name="Recipes.Topics-Regexes_in_programs-Safe_password.test" />
         <module name="Recipes.Topics-Anonymous_classes-What_about_context.main" />
+        <module name="Recipes.Topics-Test_lifecycle_annotations-Test_fixture.main" />
         <module name="Recipes.Topics-Bean_validation-Tasks-build-generated-sources-headers-java.test" />
         <module name="Recipes.Topics-The_List_interface-Implementations.main" />
+        <module name="Recipes.Topics-The_utility_class_Collections-Multiple_swaps.main" />
         <module name="Recipes.Topics-Polymorphism-Theory.main" />
         <module name="Recipes.Recipes-task.test" />
         <module name="Recipes.Topics-Regexes_in_programs-Check_IP_address.test" />
+        <module name="Recipes.Topics-Builder-Builder__1_.test" />
         <module name="Recipes.Topics-HashMap-Countries_and_capitals.test" />
         <module name="Recipes.Topics-HashMap-Theory.test" />
         <module name="Recipes.Topics-The_Set_interface-Implementations.test" />
@@ -77,6 +102,7 @@
         <module name="Recipes.Topics-Polymorphism-Statements.test" />
         <module name="Recipes.Topics-Default_methods-Resolve_a_diamond_problem.test" />
         <module name="Recipes.Topics-Optional-Check_an_Optional_value.main" />
+        <module name="Recipes.Topics-LocalDateTime-Same_date_and_time.main" />
         <module name="Recipes.Topics-The_Map_interface-Creating_a_map.test" />
         <module name="Recipes.Topics-Regexes_in_programs-Vehicle_registration_number.main" />
         <module name="Recipes.Topics-Bean_validation-Tasks-build-tmp.main" />
@@ -93,26 +119,37 @@
         <module name="Recipes.Topics-Integer_types_and_operations-Good_rest_on_vacation.test" />
         <module name="Recipes.Topics-Optional-Create_an_Optional_value.main" />
         <module name="Recipes.Topics-Functional_interfaces-Ternary_predicate.main" />
+        <module name="Recipes.Topics-Abstract_class-Theory.main" />
         <module name="Recipes.Topics-Integer_types_and_operations-Difference_of_times.main" />
         <module name="Recipes.Topics-Lambda_expressions-Next_even_number.main" />
         <module name="Recipes.Topics-HashMap-Advantages.main" />
+        <module name="Recipes.Topics-Comparing_dates_and_time-What_is_false.test" />
+        <module name="Recipes.Topics-LocalDate-Getting_information_on_a_day.main" />
+        <module name="Recipes.Topics-LocalDate-Theory.main" />
         <module name="Recipes.Topics-HashMap-Theory.main" />
         <module name="Recipes.Topics-Regexes_in_programs-Check_IP_address.main" />
+        <module name="Recipes.Topics-LocalDateTime-Adding_N_minutes.test" />
         <module name="Recipes.Topics-Boxing_and_unboxing-Safe_converting.main" />
         <module name="Recipes.Topics-Regexes_in_programs-Check_the_clock_time.main" />
         <module name="Recipes.Topics-Polymorphism-Notification.main" />
         <module name="Recipes.Topics-The_Set_interface-Implementations.main" />
         <module name="Recipes.Topics-Array-Theory.main" />
         <module name="Recipes.Recipes-task-build-test-results.main" />
+        <module name="Recipes.Topics-LocalDateTime-Theory.main" />
         <module name="Recipes.Topics-Bean_validation-Theory.test" />
         <module name="Recipes.Topics-Integer_types_and_operations-Theory.test" />
         <module name="Recipes.Topics-Array-Declarations.test" />
+        <module name="Recipes.Topics-Builder-Geek_Builder.main" />
         <module name="Recipes.Topics-Array-Initializing_an_array_of_integers.main" />
         <module name="Recipes.Topics-The_List_interface-Mutable_lists.main" />
         <module name="Recipes.Topics-Lambda_expressions-Theory.test" />
         <module name="Recipes.Topics-The_Set_interface-The_size_of_a_set.test" />
+        <module name="Recipes.Topics-Comparing_dates_and_time-The_New_Year_is_coming__or_not_.main" />
+        <module name="Recipes.Topics-The_utility_class_Collections-The_first_index_of_a_sublist.test" />
         <module name="Recipes.Topics-The_List_interface-Replacing_ArrayList_with_LinkedList.test" />
+        <module name="Recipes.Topics-Builder-Robot_Builder.test" />
         <module name="Recipes.Topics-Anonymous_classes-Theory.test" />
+        <module name="Recipes.Topics-Builder-Disadvantage_of_Builder_pattern.main" />
         <module name="Recipes.Topics-The_List_interface-Backward_indexes.test" />
         <module name="Recipes.Topics-Standard_functional_interfaces-Theory.main" />
         <module name="Recipes.Topics-The_Set_interface-Elements_of_a_set.test" />
@@ -120,46 +157,70 @@
         <module name="Recipes.Topics-Lambda_expressions-Higher-order_functions.main" />
         <module name="Recipes.Topics-Optional-Theory.main" />
         <module name="Recipes.Topics-The_Map_interface-Theory.main" />
+        <module name="Recipes.Topics-Comparing_dates_and_time-The_intersection_of_time_ranges.test" />
+        <module name="Recipes.Topics-LocalDate-The_n-th_day_from_the_end_of_a_month.test" />
         <module name="Recipes.Topics-Calling_a_method-Call_me_awesome.main" />
+        <module name="Recipes.Topics-Abstract_class-Users_and_WebSites.main" />
         <module name="Recipes.Topics-Integer_types_and_operations-Arithmetic_expression.main" />
         <module name="Recipes.Topics-HashMap-What_is__bucket.test" />
+        <module name="Recipes.Topics-The_utility_class_Collections-Non-existing_methods.test" />
         <module name="Recipes.Topics-Lambda_expressions-Statements.test" />
         <module name="Recipes.Topics-Calling_a_method-Area_of_parallelogram.main" />
+        <module name="Recipes.Topics-LocalTime-Representing_the_same_time.main" />
         <module name="Recipes.Topics-Regexes_in_programs-Check_the_date.main" />
+        <module name="Recipes.Topics-The_utility_class_Collections-Frequency_of_characters.main" />
         <module name="Recipes.Topics-Polymorphism-Runtime_method_resolution.main" />
+        <module name="Recipes.Topics-LocalDateTime-Methods_of_LocalDateTime.test" />
         <module name="Recipes.Topics-Standard_functional_interfaces-Ternary_operator.main" />
         <module name="Recipes.Topics-Optional-The_address_book.main" />
         <module name="Recipes.Topics-The_Collections_Framework_overview-Theory.main" />
         <module name="Recipes.Topics-The_List_interface-Theory.test" />
         <module name="Recipes.Topics-The_Collections_Framework_overview-Blacklist.test" />
         <module name="Recipes.Topics-Bean_validation-Tasks.main" />
+        <module name="Recipes.Topics-LocalDateTime-Methods_of_LocalDateTime.main" />
         <module name="Recipes.Topics-Anonymous_classes-Implement_Runnable.test" />
         <module name="Recipes.Topics-Array-Ways_to_create_an_array_of_ints.test" />
+        <module name="Recipes.Topics-Unit_testing_with_JUnit-Assertion.main" />
         <module name="Recipes.Topics-Interface-Area_of_a_circle.main" />
         <module name="Recipes.Topics-Boxing_and_unboxing-Theory.test" />
         <module name="Recipes.Topics-NPE-Where_NPE_might_occur.test" />
         <module name="Recipes.Topics-The_Set_interface-A_subset_of_sorted_set.main" />
+        <module name="Recipes.Topics-Comparing_dates_and_time-The_New_Year_is_coming__or_not_.test" />
         <module name="Recipes.Topics-Integer_types_and_operations-Arithmetic_expression.test" />
         <module name="Recipes.Topics-Lambda_expressions-Production_of_all_numbers_in_the_range.main" />
+        <module name="Recipes.Topics-LocalTime-Theory.test" />
+        <module name="Recipes.Topics-LocalTime-Representing_the_same_time.test" />
         <module name="Recipes.Topics-Polymorphism-Find_mistake.test" />
         <module name="Recipes.Topics-Integer_types_and_operations-Next_even_number.main" />
+        <module name="Recipes.Topics-Comparing_dates_and_time-Theory.main" />
+        <module name="Recipes.Topics-LocalTime-Seconds_since_start_of_a_day.main" />
+        <module name="Recipes.Topics-LocalTime-Same_time.test" />
         <module name="Recipes.Topics-The_Map_interface-Counting_words.test" />
         <module name="Recipes.Topics-The_Set_interface-The_most_suitable_set.test" />
+        <module name="Recipes.Topics-Comparing_dates_and_time-How_many_date-time_pairs_match_the_range.main" />
+        <module name="Recipes.Topics-LocalTime-Seconds_between_two_time_points.test" />
         <module name="Recipes.Topics-Calling_a_method-Theory.test" />
+        <module name="Recipes.Topics-Comparing_dates_and_time-Select_correct_statements.test" />
         <module name="Recipes.Topics-Lambda_expressions-Expression_closure.main" />
         <module name="Recipes.Topics-Bean_validation-Tasks-build-test-results.main" />
         <module name="Recipes.Topics-HashMap-Remove_long_names.test" />
         <module name="Recipes.Topics-Lambda_expressions-Apply_function_to_all_elements.main" />
         <module name="Recipes.Topics-Optional-A_suitable_method.test" />
         <module name="Recipes.Topics-Functional_interfaces-The_requirement.main" />
+        <module name="Recipes.Topics-LocalTime-LocalTime_constants.main" />
         <module name="Recipes.Topics-Regexes_in_programs-Card_name_validation_and_identification.test" />
         <module name="Recipes.Topics-ArrayList-Theory.main" />
+        <module name="Recipes.Topics-LocalTime-Millisecond_precision.test" />
+        <module name="Recipes.Topics-Comparing_dates_and_time-Don't_be_late_again.test" />
         <module name="Recipes.Recipes-task-build-reports-tests.main" />
         <module name="Recipes.Topics-NPE-Theory.test" />
         <module name="Recipes.Topics-Anonymous_classes-And_always_these_rules.test" />
         <module name="Recipes.util.test" />
+        <module name="Recipes.Topics-Builder-Describe_the_builder.main" />
         <module name="Recipes.Topics-The_List_interface-Companies.test" />
         <module name="Recipes.Topics-Array-Declarations.main" />
+        <module name="Recipes.Topics-Unit_testing_with_JUnit-Theory.main" />
+        <module name="Recipes.Topics-Builder-Subway_Sandwich.main" />
         <module name="Recipes.Topics-NPE-Avoid_NPE.main" />
         <module name="Recipes.Topics-Optional-Avoiding_exceptions.test" />
         <module name="Recipes.Topics-Standard_functional_interfaces-Describe_the_function.main" />
@@ -173,10 +234,15 @@
         <module name="Recipes.Topics-Integer_types_and_operations-Difference_of_times.test" />
         <module name="Recipes.Recipes-task-build-generated-sources-annotationProcessor-java.test" />
         <module name="Recipes.Topics-The_Set_interface-Theory.test" />
+        <module name="Recipes.Topics-Unit_testing_with_JUnit-An_empty_test.main" />
         <module name="Recipes.Topics-HashMap-Countries_and_capitals.main" />
+        <module name="An empty test.Recipes.Topics-Unit_testing_with_JUnit-An_empty_test.test" />
         <module name="Recipes.Topics-Default_methods-Add_new_default_method.main" />
+        <module name="Recipes.Topics-Comparing_dates_and_time-Is_the_date_between_the_two_other_dates.main" />
+        <module name="Recipes.Topics-LocalDateTime-Merging_date-time_instances.main" />
         <module name="Recipes.Topics-The_Map_interface-Modifying_a_map.test" />
         <module name="Recipes.Topics-Default_methods-Resolve_a_diamond_problem.main" />
+        <module name="Recipes.Topics-The_utility_class_Collections-Multiple_swaps.test" />
         <module name="Recipes.Topics-Calling_a_method-Abs_method.test" />
         <module name="Recipes.Topics-HashMap-The_same_pairs.test" />
         <module name="Recipes.Topics-Polymorphism-Statements.main" />
@@ -187,59 +253,82 @@
         <module name="Recipes.Topics-Interface-Theory.main" />
         <module name="Recipes.Topics-Optional-Check_an_Optional_value.test" />
         <module name="Recipes.Topics-Optional-Sum_up_optional_values.test" />
+        <module name="Recipes.Topics-Comparing_dates_and_time-Find_the_latest_date-time.test" />
         <module name="Recipes.Recipes-task-build-generated-sources-headers-java.main" />
         <module name="Recipes.Topics-Default_methods-What_is_a_result.test" />
         <module name="Recipes.Topics-Functional_interfaces-Theory.main" />
+        <module name="Recipes.Topics-Builder-Builder__1_.main" />
+        <module name="Recipes.Topics-The_utility_class_Collections-Rotating_table.main" />
         <module name="Recipes.Topics-The_Map_interface-Creating_a_map.main" />
         <module name="Recipes.Topics-Default_methods-Implement_a_default_method.main" />
         <module name="Recipes.Topics-Anonymous_classes-What_about_context.test" />
         <module name="Recipes.Topics-Bean_validation-Tasks-build-generated-sources-headers-java.main" />
         <module name="Recipes.Topics-Lambda_expressions-Expressions.test" />
         <module name="Recipes.Topics-The_List_interface-Implementations.test" />
+        <module name="Recipes.Topics-The_utility_class_Collections-Theory.test" />
         <module name="Recipes.Topics-HashMap-Advantages.test" />
+        <module name="Recipes.Topics-LocalDateTime-Same_date_and_time.test" />
+        <module name="Recipes.Topics-Builder-Builder.main" />
         <module name="Recipes.Topics-Regexes_in_programs-Ignoring_spaces.main" />
+        <module name="Recipes.Topics-Builder-Theory.test" />
         <module name="Recipes.Topics-Lambda_expressions-Next_even_number.test" />
         <module name="Recipes.Topics-The_Set_interface-Elements_of_a_set.main" />
         <module name="Recipes.Topics-Calling_a_method-Abs_method.main" />
         <module name="Recipes.Topics-The_List_interface-Backward_indexes.main" />
+        <module name="Theory.Recipes.Topics-Test_lifecycle_annotations-Theory.test" />
         <module name="Recipes.Topics-Default_methods-Add_new_default_method.test" />
+        <module name="Recipes.Topics-LocalDateTime-Adding_N_minutes.main" />
         <module name="Recipes.Topics-Optional-What_is_Optional.main" />
         <module name="Recipes.Topics-Regexes_in_programs-Check_the_clock_time.test" />
+        <module name="Recipes.Topics-The_utility_class_Collections-Frequency_of_characters.test" />
+        <module name="Recipes.Topics-LocalDate-Getting_information_on_a_day.test" />
         <module name="Recipes.Topics-Lambda_expressions-Expressions.main" />
         <module name="Recipes.Topics-The_Map_interface-Modifying_a_map.main" />
         <module name="Recipes.Topics-Boxing_and_unboxing-Safe_converting.test" />
+        <module name="Recipes.Topics-LocalDateTime-Theory.test" />
+        <module name="Recipes.Topics-Abstract_class-Theory.test" />
         <module name="Recipes.Topics-Bean_validation-Tasks.test" />
         <module name="Recipes.Topics-Array-Initializing_an_array_of_integers.test" />
         <module name="Recipes.Topics-Bean_validation-Theory.main" />
+        <module name="Recipes.Topics-LocalDate-The_n-th_day_from_the_end_of_a_month.main" />
         <module name="Recipes.Topics-The_List_interface-Similarities_between_lists_and_arrays.main" />
         <module name="Recipes.Recipes-task-build-test-results.test" />
         <module name="Recipes.Topics-Array-Theory.test" />
         <module name="Recipes.Topics-The_List_interface-Theory.main" />
         <module name="Recipes.Topics-The_Collections_Framework_overview-Blacklist.main" />
+        <module name="Recipes.Topics-Builder-Disadvantage_of_Builder_pattern.test" />
         <module name="Recipes.Topics-Default_methods-What_is_the_reason_for_default_methods.main" />
         <module name="Recipes.Topics-Regexes_in_programs-Vehicle_registration_number.test" />
         <module name="Recipes.Topics-Standard_functional_interfaces-Ternary_operator.test" />
         <module name="Recipes.Topics-The_Set_interface-The_size_of_a_set.main" />
         <module name="Recipes.Topics-Regexes_in_programs-Check_the_date.test" />
+        <module name="Failed assertion.Recipes.Topics-Unit_testing_with_JUnit-Failed_assertion.test" />
         <module name="Recipes.Topics-The_List_interface-Mutable_lists.test" />
         <module name="Recipes.Topics-Functional_interfaces-A_lambda_expression_with_seven_arguments.main" />
+        <module name="Recipes.Topics-Comparing_dates_and_time-Find_the_latest_date-time.main" />
         <module name="Recipes.Topics-HashMap-Remove_long_names.main" />
         <module name="Recipes.Topics-Integer_types_and_operations-Reversing.main" />
+        <module name="Recipes.Topics-Test_lifecycle_annotations-Theory.main" />
         <module name="Recipes.Topics-Regexes_in_programs-Safe_password.main" />
         <module name="Recipes.Topics-ArrayList-Concat_positive_numbers.main" />
+        <module name="Recipes.Topics-The_utility_class_Collections-Non-existing_methods.main" />
         <module name="Recipes.Topics-NPE-Unknown_input.main" />
         <module name="Recipes.Topics-Calling_a_method-Method_invocation.test" />
         <module name="Recipes.Topics-Functional_interfaces-Statements.main" />
         <module name="Recipes.Topics-HashMap-What_is__bucket.main" />
+        <module name="Recipes.Topics-LocalDate-Theory.test" />
         <module name="Recipes.Topics-The_List_interface-Companies.main" />
         <module name="Recipes.Recipes-task-build-tmp.test" />
         <module name="Recipes.Topics-Polymorphism-Notification.test" />
         <module name="Recipes.Topics-Anonymous_classes-Single_method.main" />
+        <module name="Recipes.Topics-Comparing_dates_and_time-Theory.test" />
         <module name="Recipes.Topics-Bean_validation-Tasks-build-tmp.test" />
+        <module name="Recipes.Topics-Comparing_dates_and_time-What_is_false.main" />
         <module name="Recipes.Topics-Regexes_in_programs-Card_name_validation_and_identification.main" />
         <module name="Recipes.Topics-Anonymous_classes-String_reverser.test" />
         <module name="Recipes.Topics-Functional_interfaces-Ternary_predicate.test" />
         <module name="Recipes.Topics-Anonymous_classes-And_always_these_rules.main" />
+        <module name="Recipes.Topics-Builder-Subway_Sandwich.test" />
         <module name="Recipes.Topics-The_Collections_Framework_overview-Theory.test" />
         <module name="Recipes.Topics-Polymorphism-Runtime_method_resolution.test" />
         <module name="Recipes.Topics-Polymorphism-Find_mistake.main" />
@@ -248,13 +337,18 @@
         <module name="Recipes.Recipes-task-build-classes-java.main" />
         <module name="Recipes.Topics-Anonymous_classes-Theory.main" />
         <module name="Recipes.Topics-Optional-Theory.test" />
+        <module name="Recipes.Topics-Builder-Robot_Builder.main" />
         <module name="Recipes.Topics-Calling_a_method-Area_of_parallelogram.test" />
         <module name="Recipes.Topics-Lambda_expressions-Theory.main" />
         <module name="Recipes.Topics-The_Map_interface-Theory.test" />
+        <module name="Recipes.Topics-Comparing_dates_and_time-How_many_date-time_pairs_match_the_range.test" />
         <module name="Recipes.Topics-Calling_a_method-Call_me_awesome.test" />
+        <module name="Recipes.Topics-Abstract_class-Users_and_WebSites.test" />
         <module name="Recipes.Topics-Boxing_and_unboxing-Theory.main" />
         <module name="Recipes.Topics-Standard_functional_interfaces-Theory.test" />
+        <module name="Recipes.Topics-Builder-Geek_Builder.test" />
         <module name="Recipes.Topics-Bean_validation-Tasks-build-reports-tests.main" />
+        <module name="Recipes.Topics-LocalDateTime-Create_LocalDateTime.main" />
         <module name="Recipes.Topics-Lambda_expressions-Creating_a_closure.main" />
       </profile>
     </annotationProcessing>
@@ -266,6 +360,8 @@
       <module name="Recipes.Recipes-task-build-test-results.main" target="11" />
       <module name="Recipes.Recipes-task-build-tmp.main" target="11" />
       <module name="Recipes.Recipes-task.main" target="11" />
+      <module name="Recipes.Topics-Abstract_class-Theory.main" target="11" />
+      <module name="Recipes.Topics-Abstract_class-Users_and_WebSites.main" target="11" />
       <module name="Recipes.Topics-Anonymous_classes-And_always_these_rules.main" target="11" />
       <module name="Recipes.Topics-Anonymous_classes-Implement_Runnable.main" target="11" />
       <module name="Recipes.Topics-Anonymous_classes-Single_method.main" target="11" />
@@ -290,11 +386,28 @@
       <module name="Recipes.Topics-Boxing_and_unboxing-Initializing_long_value.main" target="11" />
       <module name="Recipes.Topics-Boxing_and_unboxing-Safe_converting.main" target="11" />
       <module name="Recipes.Topics-Boxing_and_unboxing-Theory.main" target="11" />
+      <module name="Recipes.Topics-Builder-Builder.main" target="11" />
+      <module name="Recipes.Topics-Builder-Builder__1_.main" target="11" />
+      <module name="Recipes.Topics-Builder-Describe_the_builder.main" target="11" />
+      <module name="Recipes.Topics-Builder-Disadvantage_of_Builder_pattern.main" target="11" />
+      <module name="Recipes.Topics-Builder-Geek_Builder.main" target="11" />
+      <module name="Recipes.Topics-Builder-Robot_Builder.main" target="11" />
+      <module name="Recipes.Topics-Builder-Subway_Sandwich.main" target="11" />
+      <module name="Recipes.Topics-Builder-Theory.main" target="11" />
       <module name="Recipes.Topics-Calling_a_method-Abs_method.main" target="11" />
       <module name="Recipes.Topics-Calling_a_method-Area_of_parallelogram.main" target="11" />
       <module name="Recipes.Topics-Calling_a_method-Call_me_awesome.main" target="11" />
       <module name="Recipes.Topics-Calling_a_method-Method_invocation.main" target="11" />
       <module name="Recipes.Topics-Calling_a_method-Theory.main" target="11" />
+      <module name="Recipes.Topics-Comparing_dates_and_time-Don't_be_late_again.main" target="11" />
+      <module name="Recipes.Topics-Comparing_dates_and_time-Find_the_latest_date-time.main" target="11" />
+      <module name="Recipes.Topics-Comparing_dates_and_time-How_many_date-time_pairs_match_the_range.main" target="11" />
+      <module name="Recipes.Topics-Comparing_dates_and_time-Is_the_date_between_the_two_other_dates.main" target="11" />
+      <module name="Recipes.Topics-Comparing_dates_and_time-Select_correct_statements.main" target="11" />
+      <module name="Recipes.Topics-Comparing_dates_and_time-The_intersection_of_time_ranges.main" target="11" />
+      <module name="Recipes.Topics-Comparing_dates_and_time-The_New_Year_is_coming__or_not_.main" target="11" />
+      <module name="Recipes.Topics-Comparing_dates_and_time-Theory.main" target="11" />
+      <module name="Recipes.Topics-Comparing_dates_and_time-What_is_false.main" target="11" />
       <module name="Recipes.Topics-Default_methods-Add_new_default_method.main" target="11" />
       <module name="Recipes.Topics-Default_methods-Default_method's_body.main" target="11" />
       <module name="Recipes.Topics-Default_methods-Implement_a_default_method.main" target="11" />
@@ -332,6 +445,22 @@
       <module name="Recipes.Topics-Lambda_expressions-Production_of_all_numbers_in_the_range.main" target="11" />
       <module name="Recipes.Topics-Lambda_expressions-Statements.main" target="11" />
       <module name="Recipes.Topics-Lambda_expressions-Theory.main" target="11" />
+      <module name="Recipes.Topics-LocalDate-Getting_information_on_a_day.main" target="11" />
+      <module name="Recipes.Topics-LocalDate-The_n-th_day_from_the_end_of_a_month.main" target="11" />
+      <module name="Recipes.Topics-LocalDate-Theory.main" target="11" />
+      <module name="Recipes.Topics-LocalDateTime-Adding_N_minutes.main" target="11" />
+      <module name="Recipes.Topics-LocalDateTime-Create_LocalDateTime.main" target="11" />
+      <module name="Recipes.Topics-LocalDateTime-Merging_date-time_instances.main" target="11" />
+      <module name="Recipes.Topics-LocalDateTime-Methods_of_LocalDateTime.main" target="11" />
+      <module name="Recipes.Topics-LocalDateTime-Same_date_and_time.main" target="11" />
+      <module name="Recipes.Topics-LocalDateTime-Theory.main" target="11" />
+      <module name="Recipes.Topics-LocalTime-LocalTime_constants.main" target="11" />
+      <module name="Recipes.Topics-LocalTime-Millisecond_precision.main" target="11" />
+      <module name="Recipes.Topics-LocalTime-Representing_the_same_time.main" target="11" />
+      <module name="Recipes.Topics-LocalTime-Same_time.main" target="11" />
+      <module name="Recipes.Topics-LocalTime-Seconds_between_two_time_points.main" target="11" />
+      <module name="Recipes.Topics-LocalTime-Seconds_since_start_of_a_day.main" target="11" />
+      <module name="Recipes.Topics-LocalTime-Theory.main" target="11" />
       <module name="Recipes.Topics-NPE-Avoid_NPE.main" target="11" />
       <module name="Recipes.Topics-NPE-Theory.main" target="11" />
       <module name="Recipes.Topics-NPE-Unknown_input.main" target="11" />
@@ -361,6 +490,8 @@
       <module name="Recipes.Topics-Standard_functional_interfaces-Package_java.util.function.main" target="11" />
       <module name="Recipes.Topics-Standard_functional_interfaces-Ternary_operator.main" target="11" />
       <module name="Recipes.Topics-Standard_functional_interfaces-Theory.main" target="11" />
+      <module name="Recipes.Topics-Test_lifecycle_annotations-Test_fixture.main" target="11" />
+      <module name="Recipes.Topics-Test_lifecycle_annotations-Theory.main" target="11" />
       <module name="Recipes.Topics-The_Collections_Framework_overview-Blacklist.main" target="11" />
       <module name="Recipes.Topics-The_Collections_Framework_overview-Theory.main" target="11" />
       <module name="Recipes.Topics-The_List_interface-Backward_indexes.main" target="11" />
@@ -382,6 +513,16 @@
       <module name="Recipes.Topics-The_Set_interface-The_most_suitable_set.main" target="11" />
       <module name="Recipes.Topics-The_Set_interface-The_size_of_a_set.main" target="11" />
       <module name="Recipes.Topics-The_Set_interface-Theory.main" target="11" />
+      <module name="Recipes.Topics-The_utility_class_Collections-Frequency_of_characters.main" target="11" />
+      <module name="Recipes.Topics-The_utility_class_Collections-Multiple_swaps.main" target="11" />
+      <module name="Recipes.Topics-The_utility_class_Collections-Non-existing_methods.main" target="11" />
+      <module name="Recipes.Topics-The_utility_class_Collections-Rotating_table.main" target="11" />
+      <module name="Recipes.Topics-The_utility_class_Collections-The_first_index_of_a_sublist.main" target="11" />
+      <module name="Recipes.Topics-The_utility_class_Collections-Theory.main" target="11" />
+      <module name="Recipes.Topics-Unit_testing_with_JUnit-An_empty_test.main" target="11" />
+      <module name="Recipes.Topics-Unit_testing_with_JUnit-Assertion.main" target="11" />
+      <module name="Recipes.Topics-Unit_testing_with_JUnit-Failed_assertion.main" target="11" />
+      <module name="Recipes.Topics-Unit_testing_with_JUnit-Theory.main" target="11" />
       <module name="Recipes.util.main" target="11" />
     </bytecodeTargetLevel>
   </component>

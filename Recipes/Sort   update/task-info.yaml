@@ -635,6 +635,252 @@ files:
         }
     }
   learner_created: false
+- name: src/recipes/service/RecipeService.java
+  visible: true
+  text: |+
+    package recipes.service;
+
+    import org.springframework.stereotype.Service;
+    import recipes.entity.Recipe;
+
+    import java.util.Optional;
+
+
+    public interface RecipeService {
+
+        // Save operation
+        Recipe saveRecipe(Recipe recipe);
+        /* Previous code:
+            Recipe saveRecipe(Recipe recipe);
+         */
+
+        // Read by ID operation
+        Optional<Recipe> fetchRecipeById(int recipeId);
+
+        // Delete by ID operation
+        void deleteRecipeById(int recipeId);
+
+    }
+
+
+
+  learner_created: true
+- name: src/recipes/entity/Recipe.java
+  visible: true
+  text: |
+    package recipes.entity;
+
+    import com.fasterxml.jackson.annotation.JsonIgnore;
+    import com.fasterxml.jackson.annotation.JsonInclude;
+    import com.fasterxml.jackson.annotation.JsonProperty;
+    import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+    import javax.persistence.Entity;
+    import javax.persistence.GeneratedValue;
+    import javax.persistence.GenerationType;
+    import javax.persistence.Id;
+    import javax.validation.constraints.NotBlank;
+    import javax.validation.constraints.NotEmpty;
+    import javax.validation.constraints.NotNull;
+    import java.util.Arrays;
+
+
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    @JsonPropertyOrder({
+            "name",
+            "description",
+            "ingredients",
+            "directions"
+    })
+    @Entity
+    public class Recipe {
+
+        @Id
+        @GeneratedValue(strategy = GenerationType.AUTO)
+        @JsonIgnore
+        private int recipeId;
+        @JsonProperty
+        @NotBlank
+        private String name;
+        @JsonProperty
+        @NotBlank
+        private String description;
+        @JsonProperty
+        @NotEmpty
+        private String[] ingredients;
+        @JsonProperty
+        @NotEmpty
+        private String[] directions;
+
+        // Constructors
+        public Recipe(int recipeId, String name, String description, String[] ingredients, String[] directions) {
+            this.recipeId = recipeId;
+            this.name = name;
+            this.description = description;
+            this.ingredients = ingredients;
+            this.directions = directions;
+            recipeId++;
+        }
+
+        public Recipe() {
+        }
+
+        // Setters
+
+        public void setRecipeId(int recipeId) {
+            this.recipeId = recipeId;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public void setDescription(String description) {
+            this.description = description;
+        }
+
+        public void setIngredients(String[] ingredients) {
+            this.ingredients = ingredients;
+        }
+
+        public void setDirections(String[] directions) {
+            this.directions = directions;
+        }
+
+        // Getters
+
+        public int getRecipeId() {
+            return recipeId;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public String getDescription() {
+            return description;
+        }
+
+        public String[] getIngredients() {
+            return ingredients;
+        }
+
+        public String[] getDirections() {
+            return directions;
+        }
+
+        /*
+        @Override
+        public String toString() {
+            return "Recipe{" +
+                    "name='" + name + '\'' +
+                    ", description='" + description + '\'' +
+                    ", ingredients=" + Arrays.toString(ingredients) +
+                    ", directions=" + Arrays.toString(directions) +
+                    '}';
+        }
+         */
+
+    }
+  learner_created: true
+- name: src/recipes/service/RecipeServiceImpl.java
+  visible: true
+  text: |
+    package recipes.service;
+
+    import org.springframework.beans.factory.annotation.Autowired;
+    import org.springframework.stereotype.Service;
+    import recipes.entity.Recipe;
+    import recipes.repository.RecipeRepository;
+
+    import java.util.Optional;
+
+    @Service
+    public class RecipeServiceImpl implements RecipeService {
+
+        @Autowired
+        private RecipeRepository recipeRepository;
+
+        // Save to database operation
+        @Override
+        public Recipe saveRecipe(Recipe recipe){
+            return recipeRepository.save(recipe);
+        }
+
+        /* Previous code:
+            @Override
+        public Recipe saveRecipe(Recipe recipe){
+            return recipeRepository.save(recipe);
+        }
+         */
+
+        // Read by ID operation
+        @Override
+        public Optional<Recipe> fetchRecipeById(int recipeId){ // Previously return type was Recipe
+            return recipeRepository.findById(recipeId);
+        }
+
+        // Delete by ID operation
+        @Override
+        public void deleteRecipeById(int recipeId){
+            recipeRepository.deleteById(recipeId);
+        }
+
+    }
+  learner_created: true
+- name: src/recipes/entity/IdForReturn.java
+  visible: true
+  text: |+
+    package recipes.entity;
+
+
+    public class IdForReturn {
+
+
+        private int id;
+
+        public IdForReturn(int id) {
+            this.id = id;
+        }
+
+        public void setId(int id) {
+            this.id = id;
+        }
+
+        public int getId() {
+            return this.id;
+        }
+
+        /*
+        @Override
+        public String toString() {
+            return "IdForReturn{" +
+                    "id=" + this.id +
+                    '}';
+        }
+         */
+
+    }
+
+
+  learner_created: true
+- name: src/recipes/repository/RecipeRepository.java
+  visible: true
+  text: |
+    package recipes.repository;
+
+    import org.springframework.data.repository.CrudRepository;
+    import recipes.entity.Recipe;
+
+    public interface RecipeRepository extends CrudRepository<Recipe, Integer> {
+    }
+  learner_created: true
+- name: src/recipes/entity/RecipeMapper.java
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/learn/step/13091#comment
-status: Unchecked
-record: -1
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Mon, 12 Sep 2022 13:24:19 UTC
+record: 4

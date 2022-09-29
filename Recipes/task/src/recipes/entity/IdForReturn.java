@@ -18,14 +18,6 @@ public class IdForReturn {
         return this.id;
     }
 
-    /*
-    @Override
-    public String toString() {
-        return "IdForReturn{" +
-                "id=" + this.id +
-                '}';
-    }
-     */
 
 }
 
